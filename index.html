@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz do Amor</title>
+    <style>
+        body {
+            background-color: #ffe6f0;
+            font-family: 'Segoe Script', cursive;
+            color: #b30059;
+            padding: 30px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #ff66a3;
+        }
+        form {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .pergunta {
+            background-color: #fff0f5;
+            border: 2px dashed #ff99cc;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 15px;
+            font-size: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ffb3d9;
+            border-radius: 8px;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #ff66a3;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            display: block;
+            margin: 30px auto;
+        }
+        button:hover {
+            background-color: #ff3385;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz do Amor</h1>
+
+    <!-- Música de fundo -->
+    <audio autoplay loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+    </audio>
+
+    <form action="https://formsubmit.co/aparecidalopeschagas@gmail.com" method="POST">
+        <div class="pergunta">
+            <label>1. Quando a gente se conheceu?</label>
+            <input type="text" name="quando-se-conheceu" required>
+        </div>
+
+        <div class="pergunta">
+            <label>2. Quando foi o primeiro 'eu te amo'?</label>
+            <input type="text" name="primeiro-eu-te-amo" required>
+        </div>
+
+        <div class="pergunta">
+            <label>3. Qual a data do nosso aniversário de namoro?</label>
+            <input type="text" name="aniversario-namoro" required>
+        </div>
+
+        <div class="pergunta">
+            <label>4. Qual foi o primeiro filme ou série que assistimos juntos?</label>
+            <input type="text" name="filme-ou-serie" required>
+        </div>
+
+        <div class="pergunta">
+            <label>5. Qual a sua lembrança mais engraçada da gente juntos?</label>
+            <textarea name="lembranca-engracada" required></textarea>
+        </div>
+
+        <button type="submit">Enviar Respostas</button>
+    </form>
+</body>
+</html>
